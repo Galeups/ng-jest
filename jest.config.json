@@ -1,0 +1,11 @@
+{
+  "moduleNameMapper": {
+    "@app(.*)": "<rootDir>/src/app/$1",
+    "@core(.*)": "<rootDir>/src/app/core/$1",
+    "@shared(.*)": "<rootDir>/src/app/@shared/$1",
+    "@env(.*)": "<rootDir>/src/environments/$1"
+  },
+  "modulePathIgnorePatterns": ["<rootDir>/src/environments"],
+  "preset": "jest-preset-angular",
+  "setupFilesAfterEnv": ["./jest.setup.ts"]
+}
