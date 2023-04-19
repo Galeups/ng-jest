@@ -4,16 +4,16 @@ import { ApiService } from "./api.service";
 import { HttpClientTestingModule } from "@angular/common/http/testing";
 
 describe("ApiService", () => {
-  let service: ApiService;
+  let fakeApiService: ApiService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
     });
-    service = TestBed.inject(ApiService);
+    fakeApiService = TestBed.inject(ApiService);
   });
 
   it("created", () => {
-    expect(service).toBeTruthy();
+    expect(fakeApiService).toBeTruthy();
   });
 });
