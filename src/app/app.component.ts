@@ -1,10 +1,10 @@
-import { Component, Inject, OnInit } from "@angular/core";
-import { UserService } from "./services";
+import { Component, Inject, OnInit } from '@angular/core';
+import { UserService } from './order';
 
 @Component({
-  selector: "app-root",
+  selector: 'app-root',
   template: `
-    <div style="text-align:center" class="content">
+    <div class="content" style="text-align:center">
       <h1>Welcome to {{ title }}!</h1>
       <span style="display: block">{{ title }} app is running!</span>
 
@@ -16,7 +16,7 @@ import { UserService } from "./services";
   styles: [],
 })
 export class AppComponent implements OnInit {
-  title = "ng-jest";
+  title = 'ng-jest';
 
   readonly users$ = this.user.users$;
 
