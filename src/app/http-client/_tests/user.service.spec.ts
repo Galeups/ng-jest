@@ -7,11 +7,7 @@ import {
 import { UserService } from '../user.service';
 import { ApiService } from '../api.service';
 import { UserDto } from '../interfaces/user-dto';
-import { of, take } from 'rxjs';
-
-type PartialWriteble<T> = Partial<{
-  -readonly [key in keyof T]: T[key];
-}>;
+import { take } from 'rxjs';
 
 describe('UserService', () => {
   let service: UserService;
